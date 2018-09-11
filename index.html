@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="render.js"></script> 
+  <script type="text/javascript" src="app.js"></script>
+  <h1>Employee Manager</h1>
+  <div class="search">
+    <input id="search-input" placeholder="command" autocomplete="off" />
+    <button id="search-button">Go</button>
+  </div>
+  <div id="content"></div>
+  <div class="sidebar">
+    <p><a onclick="print();" href='javascript:print();'>Print</a></p>
+    <p><a onclick="verify();" href='javascript:verifiy();'>Verify</a></p>
+    <p><a onclick="lookup();" href='javascript:lookup();'>Lookup</a></p>
+    <p><a onclick="contains();" href='javascript:contains();'>Contains</a></p>
+    <p><a onclick="update();" href='javascript:update();'>Update</a></p>
+    <p><a onclick="add();" href='javascript:add();'>Add</a></p>
+    <p><a onclick="deleteEmployee();" href='javascript:delete();'>Delete</a></p>
+  </div><!--I have no idea how i broke this. At first, i built the HTML and had it working with the javascript commands. 
+    It all rendered properly. After adding my CSS last night, though, it all broke; none of the javascript seems to be addind into the content div, and I can't figure out why.
+    I tried changing a bunch of my html, I added teh onclick="" to each <a>, I even tried using a different render.js, but to no avail.
+    It actually seems like app.js is not linking properly into the html. I get no response in the console, which i definitely had before. 
+    I tried adding type="text/javascript", no luck. Tried adding <p> around the <a>, still no luck.
+    AHA! found it! I accidentally changed the id="content" to class="content" at some point. I feel really stupid. 
+    It's 4:50. No time to fix the output. Sorry. Also couldn't figure out the text input -->
+</body>
+</html>
